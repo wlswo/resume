@@ -93,61 +93,12 @@
             <div style="margin-top: 3rem">
               <h5>이직사유<span class="period-mark">.</span></h5>
               <ul style="font-size: 15px">
-                <li>짧은 프로젝트 주기, 지속적인 개선 경험 추구</li>
-                <li>커리어에 대한 고민</li>
+                <li>맡았던 프로젝트의 축소와 개발팀 인원 감축</li>
+                <li>지속적인 개선 경험 추구</li>
               </ul>
             </div>
           </div>
-
           <div class="row-right">
-            <div class="project">
-              <h4>EDAS(Energy Data Analysis System)<span class="period-mark">.</span></h4>
-              <span class="time">
-                <time datetime="2024-06">2024. 06</time> - 
-                <time datetime="2024-06">2024. 11</time>
-              </span>
-              <h5>Description<span class="period-mark">.</span></h5>
-              <p>
-                데이터 분석 모델 개발 환경을 제공 및 Workflow 관리 데이터 분석 플랫폼
-              </p>
-              <h5>What did I do<span class="period-mark">.</span></h5>
-              <p>
-                주기적인 쿼리 실행을 자동화하기 위해 스케줄러 모듈과 디스크 모니터링을 위한 스케줄러 모듈을 개발했습니다.
-                설정 파일만으로 이기종 데이터베이스 간의 데이터 추출 및 적재를 가능하게 하고,
-                단일 데이터베이스 작업을 간편하게 수행할 수 있는 모듈을 설계하고 개발했습니다
-              </p>
-              <h5>Performance<span class="period-mark">.</span></h5>
-              <ul>
-                <li>Spring Boot의 @Scheduled를 사용해 스케줄러 모듈 개발</li>
-                <li>Dynamic Routing Datasource를 활용한 동적 라우팅 기능 구현</li>
-                <li>AOP를 적용하여 스케줄된 작업의 실행 시간을 효과적으로 로깅</li>
-                <li>개발 가이드 및 사용법을 문서화하여 팀에 공유</li>
-              </ul>
-              <h5>Tech Stack<span class="period-mark">.</span></h5>
-              <p>Spring boot 3.1.1, Java 21, Maven, MySQL</p>
-            </div>
-            <div class="project">
-              <h4>ITS(Intelligent Transport Systems)<span class="period-mark">.</span></h4>
-              <span class="time">
-                <time datetime="2023-12">2023. 12</time> -
-                <time datetime="2024-05">2024. 05</time>
-              </span>
-              <h5>Description<span class="period-mark">.</span></h5>
-              <p>
-                경기도 지역의 교통빅데이터를 기반으로 교통정보 가시화 및 상황판을 보여주는 디지털 트윈 플랫폼
-              </p>
-              <h5>What did I do<span class="period-mark">.</span></h5>
-              <p>교통빅데이터 ETL 파이프라인을 통해 가공하고, 적재된 데이터를 서빙하기 위한 API 서버를 개발했습니다.</p>
-              <h5>Performance<span class="period-mark">.</span></h5>
-              <ul>
-                <li>Fastapi 기반 백엔드 서버 개발</li>
-                <li>데이터 추출 - 적재 Airflow dag 개발 </li>
-                <li>PostGIS 공간쿼리를 활용하여 지역별 날씨 정보, 근방 위험 지역 추출 기능 개발</li>
-                <li>기존 쿼리 실행방식 SQL Injection 취약점 개선</li>
-              </ul>
-              <h5>Tech Stack<span class="period-mark">.</span></h5>
-              <p>Python3, Airflow, Fastapi, Postgresql</p>
-            </div>
             <div class="project">
               <h4>EDT(Energy Digital Twin)<span class="period-mark">.</span></h4>
               <span class="time">
@@ -190,6 +141,54 @@
               <p>
                 Openstack, KVM, QEMU, Telegraf, Java 17, Spring boot 3.1.1, Spring REST Docs
               </p>
+            </div>
+            <div class="project">
+              <h4>EDAS(Energy Data Analysis System)<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2024-06">2024. 06</time> - 
+                <time datetime="2024-06">2024. 11</time>
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                데이터 분석 모델 개발 환경을 제공 및 Workflow 관리 데이터 분석 플랫폼
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <p>
+                주기적인 쿼리 실행을 자동화하기 위해 스케줄러 모듈과 디스크 모니터링을 위한 스케줄러 모듈을 개발했습니다.
+                설정 파일만으로 이기종 데이터베이스 간의 데이터 추출 및 적재를 가능하게 하고,
+                단일 데이터베이스 작업을 간편하게 수행할 수 있는 모듈을 설계하고 개발했습니다
+              </p>
+              <h5>Performance<span class="period-mark">.</span></h5>
+              <ul>
+                <li>Spring Boot @Scheduled를 사용한 Task 스케줄러 모듈 개발</li>
+                <li>Dynamic Routing Datasource를 활용한 동적 라우팅 기능 구현</li>
+                <li>AOP를 적용하여 스케줄된 작업의 실행 시간을 효과적으로 로깅</li>
+                <li>개발 가이드 및 사용법을 문서화하여 팀에 공유</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>Spring boot 3.1.1, Java 21, Maven,  Mybatis, MySQL</p>
+            </div>
+            <div class="project">
+              <h4>ITS(Intelligent Transport Systems)<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2023-12">2023. 12</time> -
+                <time datetime="2024-05">2024. 05</time>
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                경기도 지역의 교통빅데이터를 기반으로 교통정보 가시화 및 상황판을 보여주는 디지털 트윈 플랫폼
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <p>교통빅데이터 ETL 파이프라인을 통해 가공하고, 적재된 데이터를 서빙하기 위한 API 서버를 개발했습니다.</p>
+              <h5>Performance<span class="period-mark">.</span></h5>
+              <ul>
+                <li>Fastapi 기반 백엔드 서버 개발</li>
+                <li>데이터 추출 - 적재 Airflow dag 개발 </li>
+                <li>PostGIS 공간쿼리를 활용하여 지역별 날씨 정보, 근방 위험 지역 추출 기능 개발</li>
+                <li>기존 쿼리 실행방식 SQL Injection 취약점 개선</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>Python3, Airflow, Fastapi, Postgresql</p>
             </div>
           </div>
         </div>

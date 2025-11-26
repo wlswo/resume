@@ -88,7 +88,7 @@
             <div class="stack-info-block">
               <div class="label">BE</div>
               <div class="grep"></div>
-              <div class="value">Spring boot, Java, Python, JPA, Maven, Gradle, Docker, Linux</div>
+              <div class="value">Spring boot, Java, Python, JPA, Docker, Linux</div>
             </div>
             <div class="stack-info-block">
               <div class="label">DB</div>
@@ -96,9 +96,9 @@
               <div class="value">MySQL, PostgreSQL, Oracle</div>
             </div>
             <div class="stack-info-block">
-              <div class="label">Cloud</div>
+              <div class="label">Cloud/Infra</div>
               <div class="grep"></div>
-              <div class="value">Openstack, AWS</div>
+              <div class="value">Openstack, AWS, k8s</div>
             </div>
             <div class="stack-info-block">
               <div class="label">CI/CD</div>
@@ -108,12 +108,12 @@
             <div class="stack-info-block">
               <div class="label">형상관리</div>
               <div class="grep"></div>
-              <div class="value">Git</div>
+              <div class="value">Git, Gitlab</div>
             </div>
             <div class="stack-info-block">
               <div class="label">업무</div>
               <div class="grep"></div>
-              <div class="value">Slack, GitLab, Obsidian</div>
+              <div class="value">Slack, Obsidian, ChatGPT-5.1</div>
             </div>
           </div>
         </div>
@@ -125,24 +125,61 @@
             <h3>모비젠<span class="period-mark">.</span></h3>
             <span class="role">BackEnd Engineer</span>
             <span> <time datetime="2023-05">2023. 05</time> - 재직중 </span>
-            <div style="margin-top: 3rem">
+            <!-- <div style="margin-top: 3rem">
               <h5>이직사유<span class="period-mark">.</span></h5>
               <ul style="font-size: 15px">
-                <li>R&D 사업의 축소로 인한 프로젝트 인원 감축</li>
+                <li></li>
                 <li>짧은 프로젝트 주기, 지속적인 개선 경험 추구</li>
               </ul>
-            </div>
+            </div> -->
           </div>
           <div class="row-right">
             <div class="project">
-              <h4>EVBP(Electric Vehicle Bigdata Platform)<span class="period-mark">.</span></h4>
+              <h4>GPUaaS<span class="period-mark">.</span></h4>
               <span class="time">
-                <time datetime="2024-11">2024. 11</time> - 진행중
+                <time datetime="2025-07">2025. 07</time> - 
+                <time datetime="2025-12">2025. 12</time>
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                전기차 관련 데이터(배터리 상태, 충전기 사용 패턴 등)를 수집·적재·정제하여 데이터 레이크를 구축하고,
-                 대용량 데이터를 효율적으로 저장한 후 분석을 통해 유의미한 지표를 제공하는 플랫폼.
+                GPU 데이터센터 서버 관제를 위한 Observability 솔루션 개발
+              </p>
+              <h5>What did I do<span class="period-mark">.</span></h5>
+              <p>
+                PM 1명, FE 3명, BE 3명으로 이루어진 프로젝트에서 백엔드 파트 PL로서 팀을 리딩했습니다. </br>
+                SKT GPU 데이터센터의 스위치·보안장비·물리장비·가상서버를 관제하기 위한 솔루션을 설계, 개발했습니다.
+              </p>
+              <h5>Performance<span class="period-mark">.</span></h5>
+              <ul>
+                <li>API 수집 과정에서 단일 처리 방식에서 병렬 처리 구조로 전환하여 400% 딜레이 개선 (4s → 900ms)</li>
+                <li>관제 장비 전체 조회 API 병목 개선 (3.5s → 800ms)</li>
+                <li>기존 알람 태그 전체 조회 API 병목 개선 (1s → 100ms)</li>
+                <li>디스크 사이즈를 고려한 Apache Druid 세그먼트 컴팩션 최적 사이즈 도출하여 적용</li>
+                <li>CSAP 인증(코드 취약점, CVE 취약점)을 전담하여 진행, 기존 일정 대비 30% 단축</li>
+                <li>SKT 클라우드 플랫폼 VM 정보 연동 스케줄러 개발</li>
+                <li>인피니트밴드 스위치, 스토리지 API - Kafka - Spark - Druid 수집 파이프라인 개발</li>
+                <li>Telegraf + syslog 프로토콜 기반 로그 수집기 설계, 개발</li>
+              </ul>
+              <h5>Tech Stack<span class="period-mark">.</span></h5>
+              <p>
+                Java17, Spring Boot3, MariaDB, Kubernetes, Apache Druid, Kafka, Telegraf, Spark, Elasticsearch
+              </p>
+              <h5>Detail Link<span class="period-mark">.</span></h5>
+              <p>
+                <a href="https://small-aletopelta-a1e.notion.site/GPUaaS-239fd3d857f480ceab6fe12727359ac8?source=copy_link"
+                 target="_blank">GPUaaS</a>
+              </p>
+            </div>
+            <div class="project">
+              <h4>EVBP(Electric Vehicle Bigdata Platform)<span class="period-mark">.</span></h4>
+              <span class="time">
+                <time datetime="2024-11">2024. 11</time> - 
+                <time datetime="2025-07">2025. 07</time>
+              </span>
+              <h5>Description<span class="period-mark">.</span></h5>
+              <p>
+                전기차 관련 데이터(배터리 상태, 충전기 사용 패턴 등)를 수집·적재·정제하여 데이터 레이크를 구축하고, </br>
+                대용량 데이터를 효율적으로 저장한 후 분석을 통해 유의미한 지표를 제공하는 플랫폼.
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
@@ -168,11 +205,16 @@
               <p>
                 Python3, TeraStream, Oracle, Postgresql, Rocky Linux
               </p>
+              <h5>Detail Link<span class="period-mark">.</span></h5>
+              <p>
+                <a href="https://small-aletopelta-a1e.notion.site/EVBP-21bfd3d857f48032aafcf4f1bc11a962?source=copy_link"
+                 target="_blank">EVBP</a>
+              </p>
             </div>
             <div class="project">
               <h4>EDT(Energy Digital Twin)<span class="period-mark">.</span></h4>
               <span class="time">
-                <time datetime="2023-05">2023. 05</time> - 진행중
+                <time datetime="2025-07">2025. 07</time> - 진행중
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
@@ -214,7 +256,12 @@
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>
-                Openstack, KVM, QEMU, Java 17, Spring boot 3.1.1, Spring REST Docs, MSA(Kafka, Redis, Spark, Apache Druid, Telegraf)
+                Java17, Spring Boot3, MariaDB, Kubernetes, Apache Druid, Kafka, Telegraf, Spark, Elasticsearch
+              </p>
+              <h5>Detail Link<span class="period-mark">.</span></h5>
+              <p>
+                <a href="https://small-aletopelta-a1e.notion.site/EDT-21bfd3d857f4802f99b8efd3dbfba2f5?source=copy_link"
+                 target="_blank">EDT</a>
               </p>
             </div>
             <div class="project">
@@ -245,6 +292,11 @@
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Spring boot 3.1.1, Java 21, Maven,  Mybatis, MariaDB, Apache Druid</p>
+              <h5>Detail Link<span class="period-mark">.</span></h5>
+              <p>
+                <a href="https://small-aletopelta-a1e.notion.site/EDAS-21bfd3d857f4808a984acb087edaa9cf?source=copy_link"
+                 target="_blank">EDAS</a>
+              </p>
             </div>
             <div class="project">
               <h4>ITS(Intelligent Transport Systems)<span class="period-mark">.</span></h4>
@@ -267,6 +319,11 @@
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Python3, Airflow, Fastapi, Postgresql, Telegraf</p>
+              <h5>Detail Link<span class="period-mark">.</span></h5>
+              <p>
+                <a href="https://small-aletopelta-a1e.notion.site/ITS-21bfd3d857f48058bf7fc084def726c8?source=copy_link"
+                 target="_blank">ITS</a>
+              </p>
             </div>
           </div>
         </div>

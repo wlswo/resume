@@ -46,8 +46,9 @@
           반갑습니다,<br />저는 변재진입니다<span class="period-mark">.</span>
         </h1>
         <p class="big-paragraph">
-          판교에서 3년차 백엔드 엔지니어로 일하고 있으며, 프로덕트 엔지니어를 목표로 하고 있습니다.
-          데이터와 시스템을 이해하며, 복잡한 문제를 간결하게 풀어내는것에 몰두합니다.
+          판교에서 3년 차 백엔드 엔지니어로 근무하며, 
+          Spring·Java 기반 백엔드 개발을 주력으로 프로덕트 엔지니어를 목표로 하고 있습니다.
+          데이터의 흐름을 이해하고, 복잡한 문제를 구조적으로 단순화하는 데 강점을 가지고 있습니다.
         </p>
       </section>
       <section>
@@ -88,7 +89,7 @@
             <div class="stack-info-block">
               <div class="label">BE</div>
               <div class="grep"></div>
-              <div class="value">Spring boot, Java, Python, JPA, Docker, Linux</div>
+              <div class="value">Spring boot, Java, JPA, Docker, Linux</div>
             </div>
             <div class="stack-info-block">
               <div class="label">DB</div>
@@ -109,11 +110,6 @@
               <div class="label">형상관리</div>
               <div class="grep"></div>
               <div class="value">Git, Gitlab</div>
-            </div>
-            <div class="stack-info-block">
-              <div class="label">업무</div>
-              <div class="grep"></div>
-              <div class="value">Slack, Obsidian, ChatGPT-5.1</div>
             </div>
           </div>
         </div>
@@ -207,19 +203,17 @@
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                국책사업의 일환으로 e-실증단지 디지털 트윈 시뮬레이션 시스템을 위한
-                OpenStack 기반 Private Cloud 구축과 클라우드 모니터링 환경 인프라 구축
+                OpenStack 기반 Private Cloud 구축
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
-                POC를 위해 Openstack Private Cloud 테스트베드 환경을 구축하였으며,
-                DevOps 팀과 협업을 통해 운영 환경 구축을 서포트 했습니다. <br />
-                입사 후 처음으로 참여한 프로젝트에서 백엔드와 시스템, 클라우드 업무를 수행하며 개발 경험과 클라우드 지식을 쌓았습니다.
+                Openstack Private Cloud 테스트베드 구축을 통한 POC 검증,
+                DevOps 팀과 협업을 통해 운영 환경 구축
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
                 <li>
-                  5대의 물리서버에 OS 설치부터 Openstack-Zed 버전  Private Cloud 테스트베드 환경 설계/구축
+                  5대의 물리서버에 OS 설치부터 Openstack-Zed 버전 Private Cloud 테스트베드 환경 설계/구축
                 </li>
                 <li>
                   Openstack GPU Passthrough 적용, vGPU(MIG, SR-IOV) 기술 검토
@@ -261,22 +255,20 @@
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                데이터 분석 모델 개발 환경을 제공 및 Workflow 관리 데이터 분석 플랫폼
+               Workflow 기반 데이터 분석 플랫폼
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
-                주기적인 쿼리 실행을 자동화하기 위한 쿼리 스케줄러 모듈과 디스크 모니터링을 위한 스케줄러 모듈을 개발했습니다.
-                설정 파일만으로 이기종 데이터베이스 간의 데이터 추출 및 적재를 가능하게 하고,
-                단일 데이터베이스 작업을 간편하게 수행할 수 있는 쿼리 스케줄러 모듈을 설계하고 개발했습니다
+                쿼리 실행 스케줄러, 디스크 모니터링 모듈,
+                설정 파일 기반 이기종 DB 간 데이터 간단한 ETL 스케줄러를 개발
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
                 <li>Spring Boot @Scheduled를 사용한 Task 스케줄러 모듈 개발</li>
-                <li>소스 DB / 타겟 DB 동적 라우팅을 위해 Dynamic Routing Datasource를 도입</li>
-                <li>소스 DB SELECT 데이터양을 고려하여 batch-Size 도입</li>
-                <li>Apache Druid 시계열 DB의 특성을 고려하여 쿼리 성능 개선</li>
-                <li>AOP를 적용하여 스케줄된 작업의 실행 시간을 효과적으로 로깅</li>
-                <li>Java 1.8 버전에서 21 버전으로 마이그레이션, 스프링 레거시 코드 개선</li>
+                <li>소스 - 타겟 동적 라우팅을 위해 Dynamic Routing Datasource를 도입하여 4종 이상 지원</li>
+                <li>배치 작업 특성상 처리 시간보다 안정성이 중요하여 JVM 메모리를 고려한 batch-size 처리 적용, 메모리 사용량 약 40% 절감</li>
+                <li>Apache Druid 시계열 DB의 특성을 고려하여 쿼리 성능 개선 (30% 개선)</li>
+                <li>Java 1.8 → 21 버전으로 마이그레이션, 스프링 레거시 코드 개선 (기존 모든 API 응답 시간 800ms ~ 1200ms 이내로 개선)</li>
                 <li>개발 가이드 및 모듈 사용법을 문서화하여 팀에 공유</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
@@ -295,16 +287,16 @@
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                경기도 지역의 교통빅데이터를 기반으로 교통정보 가시화 및 상황판을 보여주는 디지털 트윈 플랫폼
+                실시간 교통정보 상황판을 보여주는 디지털 트윈 플랫폼
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
-              <p>교통빅데이터 ETL 파이프라인을 통해 가공하고, 적재된 데이터를 서빙하기 위한 API 서버를 개발했습니다.</p>
+              <p>교통빅데이터 ETL 파이프라인 개발, 데이터 서빙 API서버 개발</p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
                 <li>Fastapi 기반 백엔드 서버 개발</li>
-                <li>데이터 추출 - 적재 Airflow dag 개발 </li>
+                <li>데이터 추출 - 적재 Airflow dag 개발</li>
                 <li>PostGIS 공간쿼리를 활용하여 지역별 날씨 정보, 근방 위험 지역 추출 기능 개발</li>
-                <li>쿼리 파일의 텍스트를 파라미터값으로 치환하는 실행방식 SQL Injection 취약점 개선</li>
+                <li>기존 FastAPI SQL Injection 취약점 개선</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Python3, Airflow, Fastapi, Postgresql, Telegraf</p>

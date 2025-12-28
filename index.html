@@ -46,9 +46,8 @@
           반갑습니다,<br />저는 변재진입니다<span class="period-mark">.</span>
         </h1>
         <p class="big-paragraph">
-          판교에서 3년 차 백엔드 엔지니어로 근무하며, 
-          Spring·Java 기반 백엔드 개발을 주력으로 프로덕트 엔지니어를 목표로 하고 있습니다.
-          데이터의 흐름을 이해하고, 복잡한 문제를 구조적으로 단순화하는 데 강점을 가지고 있습니다.
+          판교에서 3년 차 백엔드 엔지니어로 근무하며 Spring·Java 기반 백엔드 개발을 중심으로 안정적인 서비스 구축에 집중해왔습니다.
+          평균 API 성능 개선률 50%를 달성했으며, Druid를 활용한 대용량 데이터 처리 경험을 보유하고 있습니다.
         </p>
       </section>
       <section>
@@ -166,14 +165,14 @@
               </p>
             </div>
             <div class="project">
-              <h4>EVBP(Electric Vehicle Bigdata Platform)<span class="period-mark">.</span></h4>
+              <h4>무공해차량 빅데이터 분석 플랫폼 개발<span class="period-mark">.</span></h4>
               <span class="time">
                 <time datetime="2024-11">2024. 11</time> - 
                 <time datetime="2025-07">2025. 07</time>
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                전기차 배터리·충전 데이터를 수집·정제해 데이터 레이크로 통합하고, 이를 기반으로 핵심 지표를 제공하는 분석 플랫폼
+                전기차 배터리·충전 데이터 기반 사업자 및 차주에게 다양한 서비스를 제공하는 서비스
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
@@ -197,13 +196,13 @@
               </p>
             </div>
             <div class="project">
-              <h4>EDT(Energy Digital Twin)<span class="period-mark">.</span></h4>
+              <h4>HPC 클러스터 시스템 개발<span class="period-mark">.</span></h4>
               <span class="time">
                 <time datetime="2025-07">2025. 07</time> - 진행중
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                OpenStack 기반 Private Cloud 구축
+                HPC 환경 구축을 위한 OpenStack 기반 프라이빗 클라우드 구성
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
@@ -216,19 +215,19 @@
                   5대의 물리서버에 OS 설치부터 Openstack-Zed 버전 Private Cloud 테스트베드 환경 설계/구축
                 </li>
                 <li>
-                  Openstack GPU Passthrough 적용, vGPU(MIG, SR-IOV) 기술 검토
+                  OpenStack 환경에서 GPU 자원 활용 한계 문제로 GPU Passthrough 적용 및 vGPU(MIG, SR-IOV) 기술 검토를 통해 GPU 가상화 적용 및 가능성 확보
                 </li>
                 <li>
-                  Openstack - Zed 설치 가이드 문서화 공유, 'Openstack을 활용한 Private Cloud 구축' 사내 기술 세미나 진행
+                  OOpenStack 구축 및 운영 지식 공유가 부족한 문제로 OpenStack Zed 설치 가이드 문서화 및 ‘OpenStack을 활용한 Private Cloud 구축’ 사내 기술 세미나 진행
                 </li>
                 <li>
                   Openstack SDK(Openstack4j)를 이용하여 VM 프로비저닝 미들웨어 API 서버 개발
                 </li>
                 <li>
-                  VM 프로비저닝 방식 개선 / OS영역과 볼륨을 분리하여 프로비저닝 시간 50% 단축 (2m -> 50s~70s) 
+                  VM 프로비저닝 속도 저하 문제로 OS 영역과 볼륨 분리 방식을 적용하여 프로비저닝 시간 50% 단축 (2분 → 50~70초) 
                 </li>
                 <li>
-                  미들웨어에서 공통으로 사용되는 Openstack API를 코어 모듈로 분리하여 멀티 모듈로 전환하여 구조 개선
+                  미들웨어 내 OpenStack API 중복 사용으로 구조 복잡도가 증가하여 공통 API를 코어 모듈로 분리하고 멀티 모듈 구조로 개선
                 </li>
                 <li>
                   사내에서 사용하는 MSA 구조의 모니터링 시스템을 Openstack 환경과 통합하는 작업 진행
@@ -248,28 +247,27 @@
               </p>
             </div>
             <div class="project">
-              <h4>EDAS(Energy Data Analysis System)<span class="period-mark">.</span></h4>
+              <h4>에너지 데이터 분석 시스템 개발<span class="period-mark">.</span></h4>
               <span class="time">
                 <time datetime="2024-06">2024. 06</time> - 
                 <time datetime="2024-06">2024. 11</time>
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-               Workflow 기반 데이터 분석 플랫폼
+               SKT 사내에서 사용되는 에너지 데이터 분석을 위한 플랫폼
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
-                쿼리 실행 스케줄러, 디스크 모니터링 모듈,
-                설정 파일 기반 이기종 DB 간 데이터 간단한 ETL 스케줄러를 개발
+                쿼리 실행 스케줄러, 실시간 디스크 사이즈 모니터링,
+                이기종 DB 간 데이터 마이그레이션 모듈 개발
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>Spring Boot @Scheduled를 사용한 Task 스케줄러 모듈 개발</li>
-                <li>소스 - 타겟 동적 라우팅을 위해 Dynamic Routing Datasource를 도입하여 4종 이상 지원</li>
+                <li>다수의 소스–타겟 DB 연동 확장에 한계가 있어 Dynamic Routing Datasource를 도입하여 4종 이상의 데이터소스 동적 라우팅 지원</li>
                 <li>배치 작업 특성상 처리 시간보다 안정성이 중요하여 JVM 메모리를 고려한 batch-size 처리 적용, 메모리 사용량 약 40% 절감</li>
-                <li>Apache Druid 시계열 DB의 특성을 고려하여 쿼리 성능 개선 (30% 개선)</li>
-                <li>Java 1.8 → 21 버전으로 마이그레이션, 스프링 레거시 코드 개선 (기존 모든 API 응답 시간 800ms ~ 1200ms 이내로 개선)</li>
-                <li>개발 가이드 및 모듈 사용법을 문서화하여 팀에 공유</li>
+                <li>Druid에 대용량 데이터 적재로 인한 쿼리 성능 저하 문제 발생, 실행 계획 분석 및 쿼리 튜닝을 통해 성능 30% 개선</li>
+                <li>Java 1.8 기반 레거시 코드로 인한 성능 및 유지보수 한계로 Java 21 마이그레이션과 스프링 레거시 코드 개선을 통해 모든 API 응답 시간 800ms 이내로 개선</li>
+                <li>Spring Boot @Scheduled를 사용한 Task 스케줄러 모듈 개발</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Spring boot 3.1.1, Java 21, Maven,  Mybatis, MariaDB, Apache Druid</p>
@@ -280,23 +278,22 @@
               </p>
             </div>
             <div class="project">
-              <h4>ITS(Intelligent Transport Systems)<span class="period-mark">.</span></h4>
+              <h4>지능형교통체계 디지털트윈 시스템 개발<span class="period-mark">.</span></h4>
               <span class="time">
                 <time datetime="2023-12">2023. 12</time> -
                 <time datetime="2024-05">2024. 05</time>
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
-                실시간 교통정보 상황판을 보여주는 디지털 트윈 플랫폼
+                교통정보 데이터를 활용해 실시간 교통 흐름과 상태를 한눈에 파악할 수 있는 디지털 트윈 플랫폼
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>교통빅데이터 ETL 파이프라인 개발, 데이터 서빙 API서버 개발</p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>Fastapi 기반 백엔드 서버 개발</li>
                 <li>데이터 추출 - 적재 Airflow dag 개발</li>
                 <li>PostGIS 공간쿼리를 활용하여 지역별 날씨 정보, 근방 위험 지역 추출 기능 개발</li>
-                <li>기존 FastAPI SQL Injection 취약점 개선</li>
+                <li>문자열 기반 쿼리 처리로 인한 FastAPI SQL Injection 취약점 발견, psycopg2 바인딩 방식 적용으로 보안 취약점 개선</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Python3, Airflow, Fastapi, Postgresql, Telegraf</p>
@@ -319,103 +316,42 @@
           </span>
           <h5>Description<span class="period-mark">.</span></h5>
           <p>
-            실제 사용자가 있는 서비스 개발을 목표로 <a href="https://github.com/MoCo-v2" target="_blank">MOCO-v2</a>라는
-            이름의 팀빌딩 플랫폼을 구축하고 운영했습니다.<br />
-            AWS 프리 티어 기간 동안 운영하였으며, 더 좋은 코드와 구조에 대해 학습하고 있습니다.<br />
-             <br />
-            <a href="https://velog.io/@kimjin5537/스터디-모집-플랫폼-MOCO가-오픈하였습니다"
-               target="_blank">
+            학습 커뮤니티 플랫폼 / 기존에 진행한 <a href="https://github.com/wlswo/MoCo" target="_blank">MOCO-v1</a> 프로젝트 고도화
+          </br>
+            <a href="https://velog.io/@kimjin5537/스터디-모집-플랫폼-MOCO가-오픈하였습니다" target="_blank">
               소개글
             </a>
           </p>
           <h5>What did I do<span class="period-mark">.</span></h5>
           <p> 
-            백엔드 API 서버 개발과 인프라를 설계하고 구성하였습니다. 
-            첫 개인 프로젝트였던 <a href="https://github.com/wlswo/MoCo" target="_blank">MOCO-v1</a> 코드와 구조를 리팩토링 하였습니다.
+            기존 프로젝트의 문제점들을 개선하기 위해 백엔드 서버 개발과 인프라를 설계하고 구성
           </p>
           <h5>Performance<span class="period-mark">.</span></h5>
           <ul>
-            <li>Spring Boot 2의 OSS 지원 종료와 의존성 버전을 고려하여 Spring Boot 2 버전에서 3버전으로 마이그레이션 진행</li>
-            <li>구조 확장성을 고려해 Next.js 도입, 뷰 템플릿(Thymeleaf)을 걷어내고 REST API로 전환</li>
-            <li>도메인을 분석하고 ORM(JPA) 사용을 위해 DB 모델링 진행</li>
-            <li>서버 확장성을 고려하여 세션 기반 인증방식에서 JWT & Oauth 2.0로 전환</li>
-            <li>테스트 코드를 작성하고 CI 파이프라인 내 테스트 자동화를 구성</li>
+            <li>Spring Boot 2 OSS 지원 종료 및 의존성 관리 문제 발생 SpringBoot3 마이그레이션</li>
+            <li>SSR 프론트엔드 확장성 문제로 Thymeleaf 제거 Next.js 도입, REST API 구조 전환으로 개발 생산성 증대 </li>
+            <li>SQL 중심 개발로 인한 도메인 로직 관리 복잡도 증가로 ORM 도입 및 유지보수성 증대</li>
+            <li>세션 기반 인증 방식의 확장성 문제 발생 JWT 및 OAuth 2.0 기반 인증으로 전환 및 수평 확장성 개선</li>
+            <li>기능 변경 시 안정성 검증이 어려운 문제로 테스트 코드 작성 및 CI 파이프라인 내 테스트 자동화 구성</li>
             <li>AWS CodeDeploy를 사용하여 배포 자동화 구성</li>
-            <li>빠른 이슈 대응을 위해 AWS Chatbot과 Slack 연동, 서버 에러 실시간 알림 구축</li>
+            <li>장애 인지 지연으로 대응이 늦어지는 문제를 개선하기 위해 AWS Chatbot과 Slack 연동 실시간 알림 구축</li>
           </ul>
           <h5>Tech Stack<span class="period-mark">.</span></h5>
-          <p>Spring boot 3, java 17, JPA, QueryDsl, Redis, Postgresql, Docker, Nginx, Github Action, AWS</p>
+          <p>Spring boot3, java 17, JPA, QueryDsl, Redis, Postgresql, Docker, Nginx, Github Action, AWS</p>
         </div>
       </section>
       <section>
-        <h2>Other Experiences<span class="period-mark">.</span></h2>
         <div class="other">
-          <h3>위메이드 - BlockChain Academy<span class="period-mark">.</span></h3>
-            <span> Wemade 기업교육 </span>
+          <h3>Education<span class="period-mark">.</span></h3>
+            <h5> 안양대학교 정보통신공학과 </h5>
             <span class="time">
-              <time datetime="2015-03">2022. 11.</time>
-              - <time datetime="2022-02">2023. 01.</time>
+              <time datetime="2015-03">2015.03</time>
+              - <time datetime="2022-02">2022.02 (졸업)</time>
             </span>
-            <p>
-              위메이드 기업에서 블록체인 교육을 진행하며, 현직자 분들의 실무적인 개발 관점을 배우며 성장했습니다. 
-              우수한 성적으로 이수하였으며, 컴퓨터 공학 지식과 같은 변하지 않는 지식의 중요성을 깨달았습니다. 
-            </p>
-            <ul>
-              <li>
-                <a href="https://github.com/wlswo/WBA-BC-Project-01"
-                   target="_blank">
-                   Mallet(프로젝트)
-                  </a>
-              </li>
-            </ul>
-        </div>
-        <div class="other">
-          <h3>멋쟁이 사자처럼 - BNB Chain 해커톤<span class="period-mark">.</span></h3>
-            <span> Team 바니버니 </span>
-            <span class="time">
-              <time datetime="2015-03">2022. 09.</time>
-              - <time datetime="2022-02">2022. 11.</time>
-            </span>
-            <p>
-              지인들과 팀을 이루어 해커톤에 도전하여 개발자로서 빠른 성장을 하였으며, 프로젝트 소개를 하며 
-              비즈니스 가치와 기술에 대한 고민을 할 수 있었습니다.
-            </p>
-            <ul>
-              <li>
-                <a href="https://www.slideshare.net/secret/oMr4xsa0CuOf4l"
-                   target="_blank">
-                  발표자료
-                  </a>
-              </li>
-            </ul>
-        </div>
-        <div class="other">
-          <h3>더조은 아카데미<span class="period-mark">.</span></h3>
-            <span> 웹 개발 과정 </span>
-            <span class="time">
-              <time datetime="2015-03">2022. 03.</time>
-              - <time datetime="2022-02">2022. 09.</time>
-            </span>
-            <p>
-              웹 개발 전반에 대한 지식과 원리, 그리고 구현 능력에 대한 깊은 이해가 필요하다고 생각했습니다. 
-              Java, JavaScript, JSP, Spring을 공부하며 프로젝트를 통해 구현 역량을 키워 나갔습니다.
-            </p>
-        </div>
-        <div class="other">
-          <h3>안양대학교<span class="period-mark">.</span></h3>
-            <span> 정보통신공학과 [3.12/4.5]  </span>
-            <span class="time">
-              <time datetime="2015-03">2015. 03.</time>
-              - <time datetime="2022-02">2022. 02.</time>
-            </span>
-            <p>
-              컴퓨터공학, 운영체제, 자료구조 등의 과목을 공부하며 개발자로서의 비전을 확립하였습니다.
-              이 과정에서 다양한 이론과 실습을 경험하며 엔지니어링 지식과 문제 해결 능력의 기반을 다져나갔습니다.
-            </p>
         </div>
       </section>
       <section>
-        <h2>Ability<span class="period-mark">.</span></h2>
+        <!-- <h2>Ability<span class="period-mark">.</span></h2>
         <div class="other">
           <h3>Overall<span class="period-mark">.</span></h3>
           <ul>
@@ -440,18 +376,18 @@
             <li>업무 중 발생하는 어려움을 긍정적인 자세로 해결해 나갑니다.</li>
             <li>합리적인 의사결정을 위해 다른 사람의 의견을 귀담아 듣습니다.</li>
           </ul>
-        </div>
+        </div> -->
         <div class="other">
           <h3>Certificate<span class="period-mark">.</span></h3>
           <ul>
-            <li>AWS Developer associate - 2023. 10.</li>
-            <li>AWS Solution Architect associate - 2023. 09.</li>
-            <li>SQLD - 2022. 09.</li>
-            <li>정보처리기사 - 2022. 06.</li>
+            <li>AWS Developer associate</li>
+            <li>AWS Solution Architect associate</li>
+            <li>SQLD</li>
+            <li>정보처리기사</li>
           </ul>
         </div>
         <div class="other">
-          <h3>Technical Seminar Experience<span class="period-mark">.</span></h3>
+          <h3>Seminar<span class="period-mark">.</span></h3>
           <ul>
             <li>
               <a href="https://www.slideshare.net/secret/48GS1xMzrg5hZI"

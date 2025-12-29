@@ -93,7 +93,7 @@
             <div class="stack-info-block">
               <div class="label">DB</div>
               <div class="grep"></div>
-              <div class="value">MySQL, PostgreSQL, Oracle</div>
+              <div class="value">MySQL, PostgreSQL, Oracle, Druid</div>
             </div>
             <div class="stack-info-block">
               <div class="label">Cloud/Infra</div>
@@ -146,9 +146,9 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>API 수집 로직을 병렬 처리 구조로 전환하여 응답 시간 77.5% 개선 (4s → 900ms)</li>
-                <li>관제 장비 전체 조회 API의 병목 구간을 최적화하여 성능 77% 개선 (3.5s → 800ms)</li>
-                <li>레거시 알람 태그 전체 조회 API 병목 해소로 90% 성능 개선 (1s → 100ms)</li>
+                <li>API 수집 후 집계 로직 성능 저하 문제로 인해, parallel stream 적용 및 응답 시간 77.5% 개선 (4s → 900ms)</li>
+                <li>Redis 반복 호출로 인한 성능 저하 문제로 CompletableFuture 병렬 처리 적용 및 성능 77% 개선 (3.5s → 800ms)</li>
+                <li>레거시 알람 전체 조회 API 병목 구간 90% 성능 개선 (1s → 100ms)</li>
                 <li>Druid 세그먼트 파편화 문제를 해결하기 위해 최적 세그먼트 컴팩션 사이즈 적용 
                     (세그먼트 수 90% 감소, 평균 레이턴시 3s → 800ms)</li>
                 <li>CSAP 인증(CWE/CVE 기반 코드·의존성 보안 점검)을 전담하여 수행, 계획 대비 일정 30% 단축</li>
@@ -176,7 +176,7 @@
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
-                데이터 수집·적재와 데이터 웨어하우스 설계를 담당하며, 데이터 특성에 맞는 파이프라인을 구축
+                데이터 수집·적재와 데이터 웨어하우스 설계를 담당하며, ETL 파이프라인 구축
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>

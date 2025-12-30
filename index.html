@@ -141,8 +141,7 @@
               </p>
               <h5>What did I do<span class="period-mark">.</span></h5>
               <p>
-                PM 1명, FE 3명, BE 3명으로 이루어진 프로젝트에서 백엔드 파트 PL 담당 </br>
-                GPU 데이터센터의 장비 모니터링 솔루션 설계, 개발
+                PL역할을 맡아 GPU 데이터센터의 장비 모니터링 솔루션 설계, 개발
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
@@ -198,7 +197,8 @@
             <div class="project">
               <h4>HPC 클러스터 시스템 개발<span class="period-mark">.</span></h4>
               <span class="time">
-                <time datetime="2025-07">2025. 07</time> - 진행중
+                <time datetime="2025-07">2025. 07</time> - 
+                <time datetime="2025-07">2025. 12</time>
               </span>
               <h5>Description<span class="period-mark">.</span></h5>
               <p>
@@ -218,7 +218,7 @@
                   OpenStack 환경에서 GPU 자원 활용 한계 문제로 GPU Passthrough 적용 및 vGPU(MIG, SR-IOV) 기술 검토를 통해 GPU 가상화 적용 및 가능성 확보
                 </li>
                 <li>
-                  OOpenStack 구축 및 운영 지식 공유가 부족한 문제로 OpenStack Zed 설치 가이드 문서화 및 ‘OpenStack을 활용한 Private Cloud 구축’ 사내 기술 세미나 진행
+                  OpenStack Zed 설치 가이드 문서화, 사내 기술 세미나 진행 및 운영 이해도 향상에 기여
                 </li>
                 <li>
                   Openstack SDK(Openstack4j)를 이용하여 VM 프로비저닝 미들웨어 API 서버 개발
@@ -227,7 +227,7 @@
                   VM 프로비저닝 속도 저하 문제로 OS 영역과 볼륨 분리 방식을 적용하여 프로비저닝 시간 50% 단축 (2분 → 50~70초) 
                 </li>
                 <li>
-                  미들웨어 내 OpenStack API 중복 사용으로 구조 복잡도가 증가하여 공통 API를 코어 모듈로 분리하고 멀티 모듈 구조로 개선
+                  미들웨어 내 OpenStack API 중복 사용으로 복잡도가 증가하여 공통 API를 코어 모듈로 분리하고 멀티 모듈 구조로 개선
                 </li>
                 <li>
                   사내에서 사용하는 MSA 구조의 모니터링 시스템을 Openstack 환경과 통합하는 작업 진행
@@ -264,10 +264,9 @@
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
                 <li>다수의 소스–타겟 DB 연동 확장에 한계가 있어 Dynamic Routing Datasource를 도입하여 4종 이상의 데이터소스 동적 라우팅 지원</li>
-                <li>배치 작업 특성상 처리 시간보다 안정성이 중요하여 JVM 메모리를 고려한 batch-size 처리 적용, 메모리 사용량 약 40% 절감</li>
+                <li>JVM 메모리를 고려한 batch-size 처리 적용, 메모리 사용량 약 40% 절감</li>
                 <li>Druid에 대용량 데이터 적재로 인한 쿼리 성능 저하 문제 발생, 실행 계획 분석 및 쿼리 튜닝을 통해 성능 30% 개선</li>
-                <li>Java 1.8 기반 레거시 코드로 인한 성능 및 유지보수 한계로 Java 21 마이그레이션과 스프링 레거시 코드 개선을 통해 모든 API 응답 시간 800ms 이내로 개선</li>
-                <li>Spring Boot @Scheduled를 사용한 Task 스케줄러 모듈 개발</li>
+                <li>Java 21 마이그레이션과 스프링 레거시 코드 개선을 통해 모든 API 응답 시간 800ms 이내로 개선</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Spring boot 3.1.1, Java 21, Maven,  Mybatis, MariaDB, Apache Druid</p>

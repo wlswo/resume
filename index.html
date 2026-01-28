@@ -150,11 +150,11 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>API 수집 후 집계 로직 성능 저하 문제로 인해, parallel stream 적용 및 응답 시간 77.5% 개선 (4s → 900ms)</li>
-                <li>Redis 반복 호출로 인한 성능 저하 문제로 CompletableFuture 병렬 처리 적용 및 성능 77% 개선 (3.5s → 800ms)</li>
-                <li>일일 50GB 적재 기준으로 500MB 컴팩션 사이즈를 산정해 Druid 운영 최적화</li>
-                <li>CSAP 인증(CWE/CVE 기반 코드·의존성 보안 점검)을 전담하여 수행, 계획 대비 일정 단축</li>
-                <li>HPA 기반 오토스케일링 Telegraf 로그 수집기 개발로 수집률 99.9% 이상 유지</li>
+                <li>API 집계 로직에 Parallel Stream을 적용하여 응답 시간 <strong>77.5% 개선 (4s → 900ms)</strong></li>
+                <li>Redis 호출 최적화(CompletableFuture)로 응답 성능 <strong>77% 개선 (3.5s → 800ms)</strong></li>
+                <li>일 50GB 데이터 적재 시 500MB 단위 Compaction 적용으로 Druid 스토리지 효율화</li>
+                <li>CSAP 보안 인증(CWE/CVE 점검)을 주도하여 계획 대비 일정 단축</li>
+                <li>HPA 기반 Telegraf 오토스케일링 구현으로 로그 수집률 <strong>99.9% 이상</strong> 달성</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>
@@ -182,10 +182,10 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>대용량 적재 구간을 일·월 단위로 분할해 초기 적재 시간을 40% 단축(8~10억 건, 90~100GB 기준)</li>
-                <li>43억 건 적재 멀티 프로세스 병렬 로딩·CSV 청크 단위 스트리밍 전략 적용 처리 속도 2배 개선</li>
-                <li>증분 적재 기준을 3일→1일로 변경하고 대상 범위를 축소해 스캔 비용 65% 단축</li>
-                <li>OpenAPI 수집 파이썬 모듈 멀티프로세스 비동기 방법으로 전체 작업 시간 30% 단축</li>
+                <li>대용량 데이터(약 10억 건) 적재 구간을 분할(일/월)하여 초기 적재 시간 <strong>40% 단축</strong></li>
+                <li>43억 건 데이터 적재에 멀티 프로세스 및 스트리밍 전략을 적용하여 처리 속도 <strong>2배 개선</strong></li>
+                <li>증분 적재 기준 최적화(3일→1일) 및 스캔 범위 축소로 비용 <strong>65% 절감</strong></li>
+                <li>Python 기반 OpenAPI 비동기 수집 모듈을 구현하여 전체 작업 시간 <strong>30% 단축</strong></li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>
@@ -214,30 +214,13 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>
-                  5대의 물리서버에 OS 설치부터 Openstack-Zed 버전 Private Cloud 테스트베드 환경 설계/구축
-                </li>
-                <li>
-                  OpenStack 환경에서 GPU 자원 활용 한계 문제로 GPU Passthrough 적용 및 vGPU(MIG, SR-IOV) 기술 검토를 통해 GPU 가상화 적용 및 가능성 확보
-                </li>
-                <li>
-                  OpenStack Zed 설치 가이드 문서화, 사내 기술 세미나 진행 및 운영 이해도 향상에 기여
-                </li>
-                <li>
-                  Openstack SDK(Openstack4j)를 이용하여 VM 프로비저닝 미들웨어 API 서버 개발
-                </li>
-                <li>
-                  VM 프로비저닝 속도 저하 문제로 OS 영역과 볼륨 분리 방식을 적용하여 프로비저닝 시간 50% 단축 (2분 → 50~70초) 
-                </li>
-                <li>
-                  미들웨어 내 OpenStack API 중복 사용으로 복잡도가 증가하여 공통 API를 코어 모듈로 분리하고 멀티 모듈 구조로 개선
-                </li>
-                <li>
-                  사내에서 사용하는 MSA 구조의 모니터링 시스템을 Openstack 환경과 통합하는 작업 진행
-                </li>
-                <li>
-                  Spring REST Docs 를 사용하여 테스트 코드 작성 / API 문서화
-                </li>
+                <li>물리 서버 5대 규모의 OpenStack(Zed) 기반 Private Cloud 테스트베드 설계 및 구축</li>
+                <li>OpenStack 사내 세미나 진행으로 팀 내 운영 역량 기여</li>
+                <li>OpenStack SDK(Openstack4j) 기반 VM 프로비저닝 미들웨어 API 서버 개발</li>
+                <li>OS 영역과 볼륨 분리 방식으로 VM 프로비저닝 시간 <strong>50% 단축 (2분 → 50~70초)</strong></li>
+                <li>중복 OpenStack API를 코어 모듈로 분리(멀티 모듈 구조)하여 코드 복잡도 개선</li>
+                <li>사내 MSA 모니터링 시스템과 OpenStack 환경 통합</li>
+                <li>Spring REST Docs 도입으로 테스트 코드 작성 및 API 문서화 자동화</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>
@@ -266,10 +249,10 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>다수의 소스–타겟 DB 연동 확장에 한계가 있어 Dynamic Routing Datasource를 도입하여 4종 이상의 데이터소스 동적 라우팅 지원</li>
-                <li>JVM 메모리를 고려한 batch-size 처리 적용, 메모리 사용량 약 40% 절감</li>
-                <li>Druid에 대용량 데이터 적재로 인한 쿼리 성능 저하 문제 발생, 실행 계획 분석 및 쿼리 튜닝을 통해 성능 30% 개선</li>
-                <li>Java 21 마이그레이션과 스프링 레거시 코드 개선을 통해 모든 API 응답 시간 800ms 이내로 개선</li>
+                <li>Dynamic Routing Datasource 도입으로 4종 이상의 이기종 DB 동적 라우팅 환경 구축</li>
+                <li>JVM 힙 메모리를 고려한 Batch Size 최적화로 메모리 사용량 <strong>40% 절감</strong></li>
+                <li>Druid 대용량 데이터 쿼리 실행 계획 분석 및 튜닝으로 성능 <strong>30% 개선</strong></li>
+                <li>Java 21 마이그레이션 및 레거시 코드 리팩토링으로 API 응답 시간 <strong>800ms 이내</strong> 달성</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Spring boot 3.1.1, Java 21, Maven,  Mybatis, MariaDB, Apache Druid</p>
@@ -293,9 +276,9 @@
               <p>교통빅데이터 ETL 파이프라인 개발, 데이터 서빙 API서버 개발</p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>데이터 추출 - 적재 Airflow dag 개발</li>
-                <li>PostGIS 공간쿼리를 활용하여 지역별 날씨 정보, 근방 위험 지역 추출 기능 개발</li>
-                <li>문자열 기반 쿼리 처리로 인한 FastAPI SQL Injection 취약점 발견, psycopg2 바인딩 방식 적용으로 보안 취약점 개선</li>
+                <li>데이터 추출 및 적재를 위한 Airflow DAG 개발 및 운영</li>
+                <li>PostGIS 공간 쿼리 활용, 지역별 기상 정보 및 위험 지역 추출 기능 구현</li>
+                <li>SQL Injection 취약점 해결을 위해 psycopg2 바인딩 방식 적용 및 보안 강화</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>Python3, Airflow, Fastapi, Postgresql, Telegraf</p>

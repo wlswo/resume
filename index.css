@@ -495,6 +495,10 @@ ul > li:before {
 }
 
 /* GitHub Card Styles */
+.side-project-section .other {
+  padding-top: 1rem;
+}
+
 .github-cards {
   display: flex;
   flex-flow: row wrap;

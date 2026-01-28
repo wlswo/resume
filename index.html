@@ -292,37 +292,93 @@
         </div>
       </section>
       <section>
-        <h2>Personal Projects<span class="period-mark">.</span></h2>
+        <h2>Side Project<span class="period-mark">.</span></h2>
         <div class="other">
-          <h3>MOCO<span class="period-mark">.</span></h3>
-          <span class="time">
-            <time datetime="2023-11">2023. 11.</time> -
-            <time datetime="2024-02">2024. 11.</time>
-          </span>
-          <h5>Description<span class="period-mark">.</span></h5>
-          <p>
-            학습 커뮤니티 플랫폼 / 기존에 진행한 <a href="https://github.com/wlswo/MoCo" target="_blank">MOCO-v1</a> 프로젝트 고도화
-          </br>
-            <a href="https://velog.io/@kimjin5537/스터디-모집-플랫폼-MOCO가-오픈하였습니다" target="_blank">
-              소개글
+          <div class="github-cards">
+            <a href="https://github.com/wlswo/xray" class="github-card" target="_blank">
+              <div class="github-card__image-container">
+                <div class="github-card__image" style="background-image: url('https://github.com/wlswo/xray/raw/main/assets/xray-logo.png')"></div>
+              </div>
+              <h3>wlswo/xray</h3>
+              <p>A simple, intuitive, and light universal UI capture and inspection tool for macOS</p>
+              <div class="github-card__meta-container">
+                <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="background-color: #dea584;"></span> Rust
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-star"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>
+                  186
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-repo-forked"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>
+                  10
+                </span>
+              </div>
             </a>
-          </p>
-          <h5>What did I do<span class="period-mark">.</span></h5>
-          <p> 
-            기존 프로젝트의 문제점들을 개선하기 위해 백엔드 서버 개발과 인프라를 설계하고 구성
-          </p>
-          <h5>Performance<span class="period-mark">.</span></h5>
-          <ul>
-            <li>Spring Boot 2 OSS 지원 종료 및 의존성 관리 문제 발생 SpringBoot3 마이그레이션</li>
-            <li>SSR 프론트엔드 확장성 문제로 Thymeleaf 제거 Next.js 도입, REST API 구조 전환으로 개발 생산성 증대 </li>
-            <li>SQL 중심 개발로 인한 도메인 로직 관리 복잡도 증가로 ORM 도입 및 유지보수성 증대</li>
-            <li>세션 기반 인증 방식의 확장성 문제 발생 JWT 및 OAuth 2.0 기반 인증으로 전환 및 수평 확장성 개선</li>
-            <li>기능 변경 시 안정성 검증이 어려운 문제로 테스트 코드 작성 및 CI 파이프라인 내 테스트 자동화 구성</li>
-            <li>AWS CodeDeploy를 사용하여 배포 자동화 구성</li>
-            <li>장애 인지 지연으로 대응이 늦어지는 문제를 개선하기 위해 AWS Chatbot과 Slack 연동 실시간 알림 구축</li>
-          </ul>
-          <h5>Tech Stack<span class="period-mark">.</span></h5>
-          <p>Spring boot3, java 17, JPA, QueryDsl, Redis, Postgresql, Docker, Nginx, Github Action, AWS</p>
+
+            <a href="https://github.com/wlswo/Lucidus" class="github-card" target="_blank">
+              <div class="github-card__image-container">
+                <div class="github-card__image" style="background-image: url('https://github.com/wlswo/Lucidus/blob/main/static/icon/icon.png?raw=true')"></div>
+              </div>
+              <h3>wlswo/Lucidus</h3>
+              <p>An easy way to create and share business cards. <br/> A simple API that generates dynamic SVG business cards on the fly</p>
+              <div class="github-card__meta-container">
+                <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="background-color: #3572A5;"></span> Python
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-star"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>
+                  45
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-repo-forked"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>
+                  3
+                </span>
+              </div>
+            </a>
+
+            <a href="https://github.com/MoCo-v2/moco-v2-backend" class="github-card" target="_blank">
+              <div class="github-card__image-container">
+                <div class="github-card__image" style="background-image: url('https://avatars.githubusercontent.com/u/150119264?s=400&u=30a6d865f73f939c049ccfd6c4b95fd85e3457c7&v=4')"></div>
+              </div>
+              <h3>MoCo-v2/moco-v2-backend</h3>
+              <p>Team Building Service Moco-v2 Server</p>
+              <div class="github-card__meta-container">
+                <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="background-color: #b07219;"></span> Java
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-star"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>
+                  20
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-repo-forked"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>
+                  0
+                </span>
+              </div>
+            </a>
+
+            <a href="https://github.com/wlswo/MoCo" class="github-card" target="_blank">
+              <div class="github-card__image-container">
+                <div class="github-card__image" style="background-image: url('https://avatars.githubusercontent.com/u/150119264?s=400&u=30a6d865f73f939c049ccfd6c4b95fd85e3457c7&v=4')"></div>
+              </div>
+              <h3>wlswo/MoCo</h3>
+              <p>Team Building Platform with Web3</p>
+              <div class="github-card__meta-container">
+                <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="background-color: #b07219;"></span> Java
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-star"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>
+                  53
+                </span>
+                <span class="github-card__meta">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-repo-forked"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>
+                  5
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <section>

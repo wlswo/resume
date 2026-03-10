@@ -45,7 +45,7 @@
         <br/><br/><br/><br/>
         
         <p class="big-paragraph">
-          판교에서 3년 차 백엔드 엔지니어로 근무하며 <strong>Java/Spring</strong> 및 <strong>Python/FastAPI</strong> 환경에서 안정적인 서비스 구축에 집중해왔습니다.
+          판교에서 3년 차 백엔드 엔지니어로 근무하며 <strong>Java/Spring</strong> 환경에서 안정적인 서비스 구축에 집중해왔습니다.
           평균 API 성능 <strong>개선률 50%</strong>를 달성했으며, Druid를 활용한 대용량 데이터 처리 경험을 보유하고 있습니다.
         </p>
       </section>
@@ -93,12 +93,12 @@
             <div class="stack-info-block">
               <div class="label">BE</div>
               <div class="grep"></div>
-              <div class="value">Fastapi, Python, Spring boot, Java, JPA, Docker, Linux</div>
+              <div class="value">Spring boot, Java, Python, MyBatis, JPA, Docker, Linux</div>
             </div>
             <div class="stack-info-block">
               <div class="label">DB</div>
               <div class="grep"></div>
-              <div class="value">MySQL, PostgreSQL, Oracle, Druid</div>
+              <div class="value">MySQL, PostgreSQL, Oracle, ApacheDruid</div>
             </div>
             <div class="stack-info-block">
               <div class="label">Cloud/Infra</div>
@@ -108,7 +108,7 @@
             <div class="stack-info-block">
               <div class="label">CI/CD</div>
               <div class="grep"></div>
-              <div class="value">Github Action, Code Deploy</div>
+              <div class="value">Github Action, Code Deploy, Argo CD</div>
             </div>
             <div class="stack-info-block">
               <div class="label">형상관리</div>
@@ -129,7 +129,7 @@
             <span> <time datetime="2023-05">2023. 05</time> - 재직중 (2년 11개월)</span>
           </div>
           <div class="row-right">
-            <div class="project">
+            <!-- <div class="project">
               <h4>에이닷 비즈 플랫폼 고도화<span class="period-mark">.</span></h4>
               <span class="time">
                 <time datetime="2026-02">2026. 02</time> - 
@@ -152,7 +152,7 @@
               <p>
                 Python3, Fastapi, Postgresql, ArgoCD
               </p>
-            </div>
+            </div> -->
             <div class="project">
               <h4>GPUaaS<span class="period-mark">.</span></h4>
               <span class="time">
@@ -171,9 +171,9 @@
               <ul>
                 <li>API 집계 로직에 Parallel Stream을 적용하여 응답 시간 <strong>77.5% 개선 (4s → 900ms)</strong></li>
                 <li>Redis 반복 호출 문제로 CompletableFuture을 사용하여 응답 성능 <strong>77% 개선 (3.5s → 800ms)</strong></li>
+                <li>HPA 기반 Telegraf 오토스케일링 구현으로 로그 수집률 <strong>99.9% 이상</strong> 달성</li>
                 <li>일 50GB 데이터 적재 시 500MB 단위 Compaction 적용으로 Druid 스토리지 효율화</li>
                 <li>CSAP 보안 인증(CWE/CVE 점검)을 주도하여 계획 대비 일정 단축</li>
-                <li>HPA 기반 Telegraf 오토스케일링 구현으로 로그 수집률 <strong>99.9% 이상</strong> 달성</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>
               <p>
@@ -233,10 +233,10 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
+                <li>OS 영역과 볼륨 분리 방식으로 VM 프로비저닝 시간 <strong>50% 단축 (2분 → 50~70초)</strong></li>
                 <li>물리 서버 5대 규모의 OpenStack(Zed) 기반 Private Cloud 테스트베드 설계 및 구축</li>
                 <li>OpenStack 사내 세미나 진행으로 팀 내 운영 역량 기여</li>
                 <li>OpenStack SDK(Openstack4j) 기반 VM 프로비저닝 미들웨어 API 서버 개발</li>
-                <li>OS 영역과 볼륨 분리 방식으로 VM 프로비저닝 시간 <strong>50% 단축 (2분 → 50~70초)</strong></li>
                 <li>중복 OpenStack API를 코어 모듈로 분리(멀티 모듈 구조)하여 코드 복잡도 개선</li>
                 <li>사내 MSA 모니터링 시스템과 OpenStack 환경 통합</li>
                 <li>Spring REST Docs 도입으로 테스트 코드 작성 및 API 문서화</li>
@@ -268,8 +268,8 @@
               </p>
               <h5>Performance<span class="period-mark">.</span></h5>
               <ul>
-                <li>Dynamic Routing Datasource 도입으로 4종 이상의 이기종 DB 동적 라우팅 환경 구축</li>
                 <li>대규모 데이터 조회 성능 저하 문제를 해결하기 위해 다차원 범위 파티셔닝을 적용, </br> 집계 쿼리 속도를 (5분 -> 8초) <strong>97% 개선</strong></li>
+                <li>Dynamic Routing Datasource 도입으로 4종 이상의 이기종 DB 동적 라우팅 환경 구축</li>
                 <li>Java 1.8 레거시 코드 Java 21로 마이그레이션</li>
               </ul>
               <h5>Tech Stack<span class="period-mark">.</span></h5>

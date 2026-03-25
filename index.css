@@ -195,7 +195,7 @@ html {
     Noto Color Emoji;
   letter-spacing: -0.3px;
   color: #222;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -210,7 +210,7 @@ html {
 
 
 section {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 p {
@@ -290,7 +290,7 @@ ul > li:before {
 
 .container {
   width: 100%;
-  max-width: 64rem;
+  max-width: 74rem;
   margin: auto;
 }
 
@@ -315,7 +315,7 @@ ul > li:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   border-bottom: 1px solid #eee;
 }
 
@@ -355,7 +355,7 @@ ul > li:before {
 }
 
 .other {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid #eee;
 }
 .cert-edu-row {
@@ -368,7 +368,7 @@ ul > li:before {
 }
 
 .career-title {
-  padding: 2rem 0 0.8rem;
+  padding: 1.2rem 0 0.6rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -443,8 +443,8 @@ ul > li:before {
 }
 
 .profile-section {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
 }
 .divider {
@@ -457,13 +457,13 @@ ul > li:before {
 .profile-row {
   display: flex;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 .profile-left {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  padding-top: 4.55rem;
+  padding-top: 8rem;
 }
 .profile {
   width: 12rem;
@@ -486,7 +486,7 @@ ul > li:before {
   justify-content: space-between;
 }
 .intro-header {
-  padding-top: 4.5rem;
+  padding-top: 2rem;
 }
 .profile-intro h2,
 .profile-intro h3 {
@@ -620,7 +620,7 @@ ul > li:before {
 
 .github-cards {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   width: 100%;
   gap: 0;
 }
@@ -633,8 +633,8 @@ ul > li:before {
   padding: 10px 0;
   color: #222;
   text-decoration: none;
-  flex: 1 1 calc(50% - 20px);
-  min-width: 300px;
+  flex: none;
+  width: 100%;
   background: #fff;
   transition: background-color 0.2s;
 }
